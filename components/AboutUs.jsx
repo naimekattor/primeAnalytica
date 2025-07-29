@@ -36,7 +36,7 @@ const AboutUs = () => {
               About US
             </h2>
             <div>
-              <h3 className="mt-2 text-[28px] font-semibold text-[#4F5256]">
+              <h3 className="mt-2 text-[28px] font-semibold text-[#4F5256] text-center">
                 Empowering Hotel Teams with AI-Driven Insights
               </h3>
               <p className="mt-6 text-gray-600 text-[18px] leading-relaxed">
@@ -51,9 +51,12 @@ const AboutUs = () => {
               </p>
 
               {/* Features List */}
-              <ul className="mt-8 space-y-4">
+              <ul className="mt-8 space-y-4 flex flex-col items-center w-full">
                 {features.map((feature, index) => (
-                  <li key={index} className="flex items-start">
+                  <li
+                    key={index}
+                    className="flex items-center w-full max-w-xl justify-start"
+                  >
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center h-6 w-6 rounded-full bg-[#1A7720] text-white">
                         <CheckIcon />
