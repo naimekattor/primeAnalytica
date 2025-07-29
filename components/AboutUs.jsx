@@ -29,42 +29,44 @@ const AboutUs = () => {
   return (
     <section id="about" className="bg-white py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
+        <div className="grid grid-cols-1  lg:gap-x-12 xl:gap-x-16">
           {/* Left Column: Text Content */}
-          <div className="flex flex-col justify-center">
-            <h2 className="text-[40px] sm:text-4xl font-bold text-[#4F5256] tracking-tight">
+          <div className="flex flex-col justify-center max-w-4xl mx-auto ">
+            <h2 className="text-[40px] sm:text-4xl font-bold text-[#4F5256] tracking-tight text-center">
               About US
             </h2>
-            <h3 className="mt-2 text-[28px] font-semibold text-[#4F5256]">
-              Empowering Hotel Teams with AI-Driven Insights
-            </h3>
-            <p className="mt-6 text-gray-600 text-[18px] leading-relaxed">
-              <span className="font-[800] text-[24px] text-red-600 italic">
-                PrimeAnalytica
-              </span>{" "}
-              is an AI-powered platform built for hotel businesses. We connect
-              with your Google Drive, analyze reports like sales, CVs,
-              financials, and contracts, and deliver fast, accurate answers
-              through a smart chatbot. Simple, secure, and made for hotel teams
-              to save time and work smarter.
-            </p>
+            <div>
+              <h3 className="mt-2 text-[28px] font-semibold text-[#4F5256]">
+                Empowering Hotel Teams with AI-Driven Insights
+              </h3>
+              <p className="mt-6 text-gray-600 text-[18px] leading-relaxed">
+                <span className="font-[800] text-[24px] text-red-600 italic">
+                  PrimeAnalytica
+                </span>{" "}
+                is an AI-powered platform built for hotel businesses. We connect
+                with your Google Drive, analyze reports like sales, CVs,
+                financials, and contracts, and deliver fast, accurate answers
+                through a smart chatbot. Simple, secure, and made for hotel
+                teams to save time and work smarter.
+              </p>
 
-            {/* Features List */}
-            <ul className="mt-8 space-y-4">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-[#1A7720] text-white">
-                      <CheckIcon />
+              {/* Features List */}
+              <ul className="mt-8 space-y-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-[#1A7720] text-white">
+                        <CheckIcon />
+                      </div>
                     </div>
-                  </div>
-                  <p className="ml-3 text-[20px] text-[#333333]">
-                    <strong>{feature.text.split("–")[0]}</strong>–
-                    {feature.text.split("–")[1]}
-                  </p>
-                </li>
-              ))}
-            </ul>
+                    <p className="ml-3 text-[20px] text-[#333333]">
+                      <strong>{feature.text.split("–")[0]}</strong>–
+                      {feature.text.split("–")[1]}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Right Column: Overlapping Images */}

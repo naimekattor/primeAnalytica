@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import InputField from "./InputField";
+import Image from "next/image";
 
 const ContactUsForm = () => {
   // State to manage form data
@@ -87,13 +88,26 @@ const ContactUsForm = () => {
                 isTextArea
               />
             </div>
-            <div className="md:col-span-2 text-center">
+            <div className="md:col-span-2 text-center space-x-2">
               <button
                 type="submit"
                 className="inline-flex justify-center py-3 px-8 border shadow-sm text-base font-medium rounded-md text-[#020202] border-[#020202] cursor-pointer"
               >
                 Send Message
               </button>
+              <a
+                href="https://wa.me/01851613453"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  width={50}
+                  height={50}
+                  alt="whatsapp"
+                  src="/images/whatsapp.png"
+                  className="inline-flex shadow-sm text-base font-medium rounded-md text-[#020202] border-[#020202] cursor-pointer w-[50px] h-[50px] object-cover"
+                />
+              </a>
             </div>
           </form>
         </div>
