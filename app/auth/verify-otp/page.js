@@ -12,8 +12,8 @@ const VerifyOtpPage = () => {
           Verify OTP
         </h2>
         <p className="text-sm text-gray-500 mt-2 max-w-xs mx-auto">
-          We'll send a verification code to your email. Check your inbox and
-          enter the code here.
+          We&apos;ll send a verification code to your email. Check your inbox
+          and enter the code here.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ const VerifyOtpPage = () => {
         <OtpInput length={5} />
         <div className="text-center text-sm">
           <p className="text-gray-600">
-            Didn't receive code?{" "}
+            Didn&apos;t receive code?{" "}
             <button
               type="button"
               className="font-medium text-red-600 hover:text-red-500 underline"

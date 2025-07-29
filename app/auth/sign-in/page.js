@@ -93,7 +93,7 @@ const SignInPage = () => {
       </form>
 
       <p className="mt-8 text-center text-sm text-gray-600">
-        Don't have an account?{" "}
+        Don&apos;t have an account?{" "}
         <Link
           href="/auth/sign-up"
           className="font-medium text-black hover:text-red-500"

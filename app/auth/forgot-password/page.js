@@ -11,8 +11,8 @@ const ForgotPasswordPage = () => {
           Forgot Password
         </h2>
         <p className="text-sm text-gray-500 mt-2 max-w-xs mx-auto">
-          Enter the email address associated with your account. We'll send you
-          an OTP to your email.
+          Enter the email address associated with your account. We&apos;ll send
+          you an OTP to your email.
         </p>
       </div>
 
