@@ -10,7 +10,10 @@ export default function ChatWidget() {
   if (!isOpen) {
     return (
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => {
+          // setIsOpen(true);
+          router.push("/chat");
+        }}
         className="fixed bottom-6 right-6 bg-black text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50 hover:bg-gray-800 transition-all"
       >
         <svg

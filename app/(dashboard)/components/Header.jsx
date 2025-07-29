@@ -33,7 +33,6 @@ export default function Header({ setSidebarOpen }) {
             src="/images/logo.png"
             className="w-[80px] h-[80px]"
             alt="logo"
-            srcset=""
           />
         </div>
 
