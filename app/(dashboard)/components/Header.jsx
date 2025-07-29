@@ -1,5 +1,6 @@
 import React from "react";
 import { UserProfile } from "./UserProfile";
+import Link from "next/link";
 
 export default function Header({ setSidebarOpen }) {
   return (
@@ -29,11 +30,13 @@ export default function Header({ setSidebarOpen }) {
 
         {/* Spacer */}
         <div className="flex-1">
-          <img
-            src="/images/logo.png"
-            className="w-[80px] h-[80px]"
-            alt="logo"
-          />
+          <Link href={"/"}>
+            <img
+              src="/images/logo.png"
+              className="w-[80px] h-[80px]"
+              alt="logo"
+            />
+          </Link>
         </div>
 
         <div className="flex items-center space-x-4">
